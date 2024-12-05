@@ -5,6 +5,11 @@ const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
 const ImageminMozjpeg = require('imagemin-mozjpeg');
+const webpack = require('webpack');
+
+require('dotenv').config({
+    path: path.resolve('.env'),
+});
 
 module.exports = {
     entry: {
